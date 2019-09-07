@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<div class = "login">
+		<h1> Enter the TEXT </h1>
+		<form action = "{{url_for('print_tags')}}" method="post">
+			<input type= "text" name="mes" >
+
+
+			<button type ="submit" class="btn btn-primary btn-block btn-large"> Generate Tags</button>
+		</form>
+
+	<br>
+	<br>
+
+
+	{{prediction_text}}
+
+</div>
+</body>
+</html>
